@@ -1,0 +1,315 @@
+:root {
+    --icon--color1: #CDBE91;
+    --icon--color2: #C8AA6E;
+
+    --font--color1: #BBAF88;
+    --font--color2: #A09B8C;
+    --font--color3: #5B5A56;
+    --font--color4: #F0E6D1;
+
+    --ui--color1: #B89B60;
+    --ui--color2: #6C5128;
+    --ui--color3: #124D57;
+
+    --bg--color1: #020D16;
+    --bg--color2: #0A2F3E;
+}
+
+*{
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    background: linear-gradient(to bottom right, var(--bg--color2), var(--bg--color1));
+    display: flex;
+    justify-content: center;
+}
+
+#container{  
+    width: 1600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 1600px;
+    height: 100px;
+}
+
+#header-left{
+    display: flex;
+    width: 1320px;
+    height: 100px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 1px solid var(--ui--color1);
+}
+
+#logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 25px 0px 25px 35px;
+}
+
+#shop-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 35px 0px 35px 1150px;
+}
+
+#forge-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 35px 0px 35px 1200px;
+}
+
+#myPage-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 35px 0px 35px 1250px;
+}
+
+/* #search-input{
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 36px;
+    font-size: 18px;
+    margin: 32px 0px 32px 1025px;
+} */
+
+
+#brightness-layer-top{
+    position: absolute;
+    width: 1318px;
+    height: 907px;
+    margin: 0px;
+    background: linear-gradient(to top, transparent 85%, black, transparent 5%, black);
+    overflow: hidden;
+    opacity: 100%;
+    z-index: -1;
+}
+
+#brightness-layer-bot{
+    position: absolute;
+    width: 1318px;
+    height: 907px;
+    margin: 0px;
+    background: linear-gradient(to bottom, transparent 90%, black, transparent 1%, black);
+    overflow: hidden;
+    opacity: 100%;
+    z-index: -1;
+}
+
+#brightness-layer-horizontal{
+    position: absolute;
+    width: 1318px;
+    height: 907px;
+    margin: 0px;
+    background: linear-gradient(to left, transparent 70%, black, transparent 5%, black);
+    overflow: hidden;
+    opacity: 100%;
+    z-index: -1;
+}
+
+
+#main-bg{
+    width: 1320px;
+    height: 907px;
+    margin: 0px;
+    opacity: 80%;
+    z-index: -2;
+}
+
+#header-right{
+    display: flex;
+    width: 280px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid var(--ui--color1);
+}
+
+#profile-icon{
+    width: 74px;   
+    height: 74px;
+    margin: 11px;
+    border-radius: 39px;
+    box-sizing: border-box;
+    border: 5px solid var(--ui--color1);
+}
+
+#login-text{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 130px;
+    text-align: center;
+    color : var(--font--color1);
+    font-weight: bold;
+}
+
+#loginBtn{
+    background-color: var(--ui--color1);
+    width: 120px;
+    margin-top: 5px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#loginBtn-text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+main{
+    display: flex;
+    width: 1600px;
+    height: 800px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid var(--ui--color1);
+}
+
+#main-contents{
+    display: flex;
+    width: 1320px;
+    height: 800px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: hidden;
+}
+
+#table {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+  }
+  
+  #table>.row {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    border: 1px solid var(--ui--color1);
+    box-sizing: border-box;
+  
+  }
+  
+  #tabla> .row> .icondiv{
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--ui--color1);
+    box-sizing: border-box;
+    margin-top: 2px;
+  }
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--ui--color1);
+    box-sizing: border-box;
+  }
+  #header-icon{
+    width: 84px;
+    height: 76px;
+    border: 2px solid var(--ui--color1);
+
+  }
+  
+  
+  
+  #table>.row>.summonerName,
+  .leaguePoints,
+  .wins,
+  .losses {
+    background-color: var(--bg--color1);
+    opacity: 70%;
+    color: var(--font--color1);
+    line-height: 64px;
+    width: 240px;
+    border: 1px solid var(--ui--color1);
+    box-sizing: border-box;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #table>.row>
+  .leaguePoints,
+  .wins,
+  .losses{
+    width: 200px;
+  }
+
+nav{
+    width: 280px;
+    height: 800px;
+    border-left: 1px solid var(--ui--color1);
+    box-sizing: border-box;
+}
+
+#nav-list{
+    width: 280px;
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 1px solid var(--ui--color1);
+
+}
+
+.nav-items{
+    width: 280px;
+    height: 60px;
+    padding-left: 60px;
+    color: var(--font--color1);
+    font-weight: bold;
+    margin: 11px;
+    display: flex;
+}
+
+.nav-items:hover{
+    color: var(--ui--color2);
+}
+
+.nav-imgs{
+    width: 38px;
+    height: 38px;
+    border: 3px solid var(--ui--color1);
+    border-radius: 19px;
+    margin: 11px;
+    box-sizing: border-box;
+}
+
+.nav-item-names{
+    height: 20px;
+    font-size: 17px;
+    margin: 20px 0px 20px 0px;
+    /*border: 1px solid var(--ui--color1);*/
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
